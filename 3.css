@@ -1,0 +1,65 @@
+/* 1️⃣ Link States */
+
+a:link{
+color:blue;
+}
+
+a:visited{
+color:purple;
+}
+
+a:hover{
+color:red;
+text-decoration:underline;
+}
+
+a:active{
+color:green;
+}
+
+
+/* 2️⃣ Form States */
+
+input:focus{
+border:2px solid blue;
+background-color:#f0f8ff;
+}
+
+input:checked{
+width:20px;
+height:20px;
+}
+
+button:disabled{
+background-color:gray;
+color:white;
+}
+
+
+/* 3️⃣ Structural Pseudo Classes */
+
+li:first-child{
+color:red;
+}
+
+li:last-child{
+color:green;
+}
+
+li:nth-child(2){
+font-weight:bold;
+}
+
+
+/* 4️⃣ Content Based Pseudo Classes */
+
+.box:empty{
+width:100px;
+height:100px;
+background-color:lightgray;
+border:2px dashed black;
+}
+
+p:not(.special){
+color:blue;
+}

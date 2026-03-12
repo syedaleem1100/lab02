@@ -1,0 +1,92 @@
+/* ===== General Styling ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.image-card {
+  text-align: center;
+}
+
+/* ===== Rounded Corners ===== */
+.image-card img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px; /* Rounded corners */
+}
+
+/* ===== Circular Image ===== */
+.circle {
+  border-radius: 50%; /* Perfect circle */
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* ===== Border & Shadow ===== */
+.border-shadow {
+  border: 5px solid #3498db;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+}
+
+/* ===== Hover Effect with Overlay ===== */
+.hover-overlay {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-overlay img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+
+.hover-overlay:hover img {
+  transform: scale(1.1); /* Zoom on hover */
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-overlay:hover .overlay-text {
+  opacity: 1;
+}
+
+/* ===== CSS Filter ===== */
+.filter {
+  filter: grayscale(70%) brightness(120%) contrast(110%);
+  transition: filter 0.3s ease;
+}
+
+.filter:hover {
+  filter: grayscale(0%) brightness(100%) contrast(100%);
+}

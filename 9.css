@@ -1,0 +1,54 @@
+/* 1️⃣ Multiple Background Layers */
+.multi-backgrounds {
+    background-image: url('bacha.png'),
+                      url('bacha.png');
+    background-repeat: repeat, no-repeat;
+    background-position: top left, center;
+    background-size: 50px 50px, cover;
+    padding: 100px;
+    margin: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+/* 2️⃣ Linear Gradient */
+.linear-gradient {
+    background: linear-gradient(to right, #ff7f50, #1e90ff);
+    padding: 100px;
+    margin: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+/* 3️⃣ Radial Gradient */
+.radial-gradient {
+    background: radial-gradient(circle, #ffcc00, #ff3300);
+    padding: 100px;
+    margin: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+/* 4️⃣ Background Blend Modes */
+.blend-mode {
+    background-image: url('bacha.png');
+    background-color: rgba(255, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding: 100px;
+    margin: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+/* 5️⃣ Background Clip & Origin */
+.clip-origin {
+    background-image: url('bacha.png');
+    background-color: #1e90ff;
+    background-origin: content-box; /* background starts from content-box */
+    background-clip: padding-box; /* background visible only in padding-box */
+    padding: 50px;
+    margin: 20px 0;
+    color: white;
+    text-align: center;
+}

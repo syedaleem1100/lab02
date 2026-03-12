@@ -1,0 +1,21 @@
+.profile{
+    float: right;
+    border: 1px blueviolet;
+    padding: 4px;
+    margin: 2px;
+    
+}
+p{
+    clear: left;
+}
+.box{
+float:left;
+width:100px;
+height:100px;
+background:red;
+}
+.container::after{
+content:"";
+display:table;
+clear:both;
+}

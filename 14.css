@@ -1,0 +1,78 @@
+/* ===== 1️⃣ Basic Selectors ===== */
+p {
+    color: darkblue; /* element selector */
+    font-size: 16px;
+}
+
+div {
+    background-color: lightgray; /* element selector */
+    padding: 10px;
+}
+
+.highlight {
+    background-color: yellow; /* class selector */
+}
+
+#unique {
+    border: 2px solid red; /* ID selector */
+}
+
+* {
+    font-family: Arial, sans-serif; /* universal selector */
+}
+
+/* ===== 2️⃣ Attribute Selectors ===== */
+a[href] {
+    color: green; /* selects elements with href attribute */
+}
+
+input[type="text"] {
+    border: 2px solid blue; /* exact match */
+}
+
+input[placeholder*="Email"] {
+    border: 2px dashed orange; /* partial value match */
+}
+
+/* ===== 3️⃣ Combinators ===== */
+section p {
+    color: purple; /* descendant combinator */
+}
+
+section > p.special {
+    background-color: pink; /* child combinator */
+}
+
+span + span {
+    font-weight: bold; /* adjacent sibling combinator */
+}
+
+span ~ span {
+    color: red; /* general sibling combinator */
+}
+
+/* ===== 4️⃣ Pseudo-classes ===== */
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    color: gray;
+}
+a:hover {
+    color: orange;
+}
+ul li:first-child {
+    color: green;
+}
+ul li:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+/* ===== 5️⃣ Pseudo-elements ===== */
+.pseudo::before {
+    content: "✨ "; /* adds content before element */
+}
+
+.pseudo::after {
+    content: " ✨"; /* adds content after element */
+}

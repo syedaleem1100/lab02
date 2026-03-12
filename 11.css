@@ -1,0 +1,53 @@
+/* 1️⃣ Hover Effects */
+.img-hover {
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 20px 0;
+}
+
+.img-hover:hover {
+    transform: scale(1.1);             /* zoom effect */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5); /* shadow on hover */
+}
+
+/* 2️⃣ Advanced CSS Filters */
+.img-advanced-filters {
+    width: 300px;
+    filter: blur(2px) brightness(120%) contrast(110%);
+    transition: filter 0.3s ease;
+    margin: 20px 0;
+}
+
+.img-advanced-filters:hover {
+    filter: none; /* reset filters on hover */
+}
+
+/* 3️⃣ Blend Modes */
+.blend-container {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.img-blend {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: multiply; /* blending effect */
+}
+
+/* 4️⃣ Image Masks / Clipping Paths */
+.img-mask {
+    width: 300px;
+    -webkit-clip-path: circle(50% at 50% 50%); /* circular mask */
+    clip-path: circle(50% at 50% 50%);
+    transition: clip-path 0.3s ease;
+    margin: 20px 0;
+}
+
+.img-mask:hover {
+    -webkit-clip-path: ellipse(70% 40% at 50% 50%);
+    clip-path: ellipse(70% 40% at 50% 50%); /* ellipse shape on hover */
+}

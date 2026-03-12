@@ -1,0 +1,86 @@
+/* ===== 1️⃣ Font Families ===== */
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-lobster {
+    font-family: 'Lobster', cursive;
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ===== 2️⃣ Font Sizes ===== */
+.size-px {
+    font-size: 20px;
+}
+
+.size-em {
+    font-size: 1.5em;
+}
+
+.size-rem {
+    font-size: 2rem;
+}
+
+.size-percent {
+    font-size: 120%;
+}
+
+/* ===== 3️⃣ Text Alignment ===== */
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-justify {
+    text-align: justify;
+}
+
+/* ===== 4️⃣ Text Decoration & Transformation ===== */
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+/* ===== 5️⃣ Text Shadow ===== */
+.shadow-small {
+    text-shadow: 1px 1px 2px gray;
+}
+
+.shadow-medium {
+    text-shadow: 2px 2px 4px gray;
+}
+
+.shadow-large {
+    text-shadow: 3px 3px 6px black;
+}
+
+/* Optional: general body styling */
+body {
+    padding: 20px;
+    line-height: 1.6;
+}

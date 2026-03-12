@@ -1,0 +1,85 @@
+/* ===== General Table Styling ===== */
+.course-table {
+  width: 100%;
+  border-collapse: collapse; /* removes double borders */
+  margin: 20px 0;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.course-table th, .course-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* ===== Zebra Striping ===== */
+.course-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.course-table tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+/* ===== Hover Effect ===== */
+.course-table tbody tr:hover {
+  background-color: #d6eaf8;
+  transform: scale(1.01);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* ===== Header Styling ===== */
+.course-table thead {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.course-table thead th {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* ===== Color-coded Course Types ===== */
+.course-table td.lecture {
+  background-color: #d1f2eb; /* light green for lectures */
+}
+
+.course-table td.lab {
+  background-color: #f9e79f; /* light yellow for labs */
+}
+
+.course-table td.tutorial {
+  background-color: #f5b7b1; /* light pink for tutorials */
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .course-table thead {
+    display: none; /* hide table header on small screens */
+  }
+  
+  .course-table, .course-table tbody, .course-table tr, .course-table td {
+    display: block;
+    width: 100%;
+  }
+  
+  .course-table tr {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .course-table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+  
+  .course-table td::before {
+    content: attr(data-label); /* show column label */
+    position: absolute;
+    left: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}

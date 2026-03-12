@@ -1,0 +1,44 @@
+/* 1️⃣ Margins, Padding, Borders */
+.box-basic {
+    width: 200px;
+    height: 100px;
+    margin: 20px;             /* space outside the box */
+    padding: 15px;            /* space inside the box */
+    border: 3px solid #3498db; /* border thickness and color */
+    background-color: #ecf0f1;
+}
+
+/* 2️⃣ Box-sizing */
+.box-border-box {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border: 5px solid #e74c3c;
+    box-sizing: border-box; /* width includes padding & border */
+    background-color: #f9e79f;
+    margin: 20px 0;
+}
+
+/* 3️⃣ Outline */
+.box-outline {
+    width: 200px;
+    height: 100px;
+    border: 2px solid #2ecc71;
+    outline: 4px dashed #8e44ad; /* outline drawn outside border */
+    outline-offset: 5px;          /* distance between border and outline */
+    background-color: #d5f5e3;
+    margin: 20px 0;
+}
+
+/* 4️⃣ Box-shadow */
+.box-shadow {
+    width: 200px;
+    height: 100px;
+    background-color: #f1c40f;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5); /* x-offset, y-offset, blur, color */
+    margin: 20px 0;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+    color: white;
+}

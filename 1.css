@@ -1,0 +1,31 @@
+/* 1️⃣ Select elements with a specific attribute */
+
+input[placeholder]{
+border:2px solid blue;
+padding:5px;
+}
+
+/* 2️⃣ Attribute value selector */
+
+input[type="password"]{
+background-color:lightyellow;
+}
+
+/* 3️⃣ Partial value matching */
+
+a[href*="google"]{
+color:red;
+font-weight:bold;
+}
+
+/* 4️⃣ Begins with selector */
+
+a[href^="https"]{
+text-decoration:none;
+}
+
+/* 5️⃣ Ends with selector */
+
+img[src$=".jpg"]{
+border:4px solid green;
+}

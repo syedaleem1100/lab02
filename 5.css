@@ -1,0 +1,64 @@
+body{
+font-family:Arial, sans-serif;
+margin:40px;
+}
+
+
+/* 1️⃣ Font Families */
+
+.serif{
+font-family:"Times New Roman", serif;
+}
+
+.sans{
+font-family:Arial, sans-serif;
+}
+
+.google{
+font-family:"Roboto", sans-serif;
+}
+
+
+/* 2️⃣ Font Sizes */
+
+.px{
+font-size:20px;
+}
+
+.em{
+font-size:1.5em;
+}
+
+.rem{
+font-size:1.5rem;
+}
+
+.percent{
+font-size:120%;
+}
+
+
+/* 3️⃣ Font Weights */
+
+.normal{
+font-weight:normal;
+}
+
+.bold{
+font-weight:bold;
+}
+
+.numeric{
+font-weight:700;
+}
+
+
+/* 4️⃣ Font Style and Variant */
+
+.italic{
+font-style:italic;
+}
+
+.smallcaps{
+font-variant:small-caps;
+}

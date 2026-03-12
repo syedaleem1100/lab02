@@ -1,0 +1,91 @@
+/* 1️⃣ Background Colors */
+
+/* Hex */
+.bg-color-hex {
+    background-color: #ffcc00;
+    padding: 30px;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* RGB */
+.bg-color-rgb {
+    background-color: rgb(0, 128, 255);
+    padding: 30px;
+    margin: 20px 0;
+    color: white;
+}
+
+/* RGBA with transparency */
+.bg-color-rgba {
+    background-color: rgba(255, 0, 0, 0.5);
+    padding: 30px;
+    margin: 20px 0;
+    color: black;
+}
+
+/* 2️⃣ Background Images */
+
+/* Repeated image */
+.bg-image-repeat {
+    background-image: url('bacha.png');
+    background-repeat: repeat; /* default is repeat */
+    padding: 50px;
+    margin: 20px 0;
+    color: white;
+}
+
+/* No repeat, positioned center */
+.bg-image-no-repeat {
+    background-image: url('bacha.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px;
+    margin: 20px 0;
+    color: white;
+}
+
+/* 3️⃣ Background Size */
+
+/* Cover: fill the element */
+.bg-image-cover {
+    background-image: url('bacha.png');
+    background-size: cover;
+    background-position: center;
+    padding: 80px;
+    margin: 20px 0;
+    color: white;
+}
+
+/* Contain: fit inside element */
+.bg-image-contain {
+    background-image: url('bacha.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 80px;
+    margin: 20px 0;
+    color: white;
+}
+
+/* 4️⃣ Background Attachment */
+
+/* Fixed: stays while scrolling */
+.bg-attachment-fixed {
+    background-image: url('bacha.png');
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 80px;
+    margin: 20px 0;
+    color: white;
+}
+
+/* Scroll: default behavior */
+.bg-attachment-scroll {
+    background-image: url('bacha.png');
+    background-attachment: scroll;
+    background-size: cover;
+    padding: 80px;
+    margin: 20px 0;
+    color: white;
+}

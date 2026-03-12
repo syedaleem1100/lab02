@@ -1,0 +1,27 @@
+/* 1️⃣ ::first-letter */
+
+.text::first-letter{
+font-size:30px;
+color:red;
+font-weight:bold;
+}
+
+/* 2️⃣ ::first-line */
+
+.text::first-line{
+color:blue;
+}
+
+/* 3️⃣ ::selection */
+
+::selection{
+background-color:yellow;
+color:black;
+}
+
+/* 4️⃣ Combining pseudo-element with pseudo-class */
+
+a:hover::after{
+content:" ← Click this link";
+color:green;
+}

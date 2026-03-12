@@ -1,0 +1,40 @@
+/* Common styles for all boxes */
+.transform-box {
+    width: 150px;
+    height: 100px;
+    margin: 20px;
+    background-color: #3498db;
+    color: white;
+    line-height: 100px;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.5s ease; /* smooth animation */
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* 1️⃣ Translate */
+.translate:hover {
+    transform: translate(50px, 20px); /* move right 50px, down 20px */
+}
+
+/* 2️⃣ Rotate */
+.rotate:hover {
+    transform: rotate(45deg); /* rotate 45 degrees */
+}
+
+/* 3️⃣ Scale */
+.scale:hover {
+    transform: scale(1.5); /* enlarge 1.5 times */
+}
+
+/* 4️⃣ Skew */
+.skew:hover {
+    transform: skew(20deg, 10deg); /* skew X by 20deg, Y by 10deg */
+}
+
+/* 5️⃣ Transform-Origin */
+.origin:hover {
+    transform: rotate(45deg);
+    transform-origin: top left; /* rotation pivot point */
+}

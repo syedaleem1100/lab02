@@ -1,0 +1,36 @@
+/* Element Selector */
+
+h1{
+color:darkblue;
+}
+
+p{
+font-size:18px;
+color:black;
+}
+
+div{
+background-color:lightgray;
+padding:10px;
+margin:10px 0;
+}
+
+/* Class Selector */
+
+.highlight{
+color:green;
+font-weight:bold;
+}
+
+/* ID Selector */
+
+#special{
+color:red;
+font-size:20px;
+}
+
+/* Universal Selector */
+
+*{
+font-family:Arial, sans-serif;
+}

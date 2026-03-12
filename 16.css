@@ -1,0 +1,60 @@
+/* ===== General Styling ===== */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* ===== 1️⃣ Solid Color Background ===== */
+.bg-solid {
+    background-color: #3498db; /* blue */
+}
+
+/* ===== 2️⃣ Image Backgrounds ===== */
+.bg-image-repeat {
+    background-image: url('../images/backgrounds/pattern.png');
+    background-repeat: repeat;
+}
+
+.bg-image-no-repeat {
+    background-image: url('../images/backgrounds/hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* ===== 3️⃣ Linear Gradient ===== */
+.bg-linear-gradient {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+/* ===== 4️⃣ Radial Gradient ===== */
+.bg-radial-gradient {
+    background: radial-gradient(circle, #8e2de2, #4a00e0);
+}
+
+/* ===== 5️⃣ Multiple Background Layers ===== */
+.bg-multiple-layers {
+    background-image: 
+        url('bacha.png'),
+        linear-gradient(to right, rgba(255,255,255,0.2), rgba(0,0,0,0.3));
+    background-repeat: repeat, no-repeat;
+    background-position: top left, center;
+    background-size: auto, cover;
+}
+
+/* ===== 6️⃣ Background Blend Mode ===== */
+.bg-blend-mode {
+    background-image: url('bacha.png');
+    background-color: rgba(255, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+}

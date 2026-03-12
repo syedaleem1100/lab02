@@ -1,0 +1,37 @@
+/* 1️⃣ Line Height */
+.line-height {
+    line-height: 1.8; /* space between lines for readability */
+}
+
+/* 2️⃣ Letter Spacing */
+.letter-spacing {
+    letter-spacing: 3px; /* space between letters */
+}
+
+/* 3️⃣ Word Spacing */
+.word-spacing {
+    word-spacing: 10px; /* space between words */
+}
+
+/* 4️⃣ Text Indent */
+.text-indent {
+    text-indent: 50px; /* indent first line */
+}
+
+/* 5️⃣ White-space */
+.white-space {
+    white-space: pre; /* preserves spaces and line breaks */
+}
+
+/* 6️⃣ Text Overflow */
+.overflow-box {
+    width: 300px;
+    border: 1px solid #ccc;
+    overflow: hidden; /* hide overflow content */
+}
+
+.text-overflow {
+    white-space: nowrap; /* keep text in a single line */
+    overflow: hidden; /* hide extra text */
+    text-overflow: ellipsis; /* show "..." for overflow */
+}

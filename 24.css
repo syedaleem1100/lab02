@@ -1,0 +1,97 @@
+/* ===== Gradient Text ===== */
+.gradient-text {
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #ff6b6b, #5f27cd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* ===== Custom Checkboxes and Radios ===== */
+.custom-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 40px;
+  font-size: 1.2rem;
+}
+
+.custom-checkbox,
+.custom-radio {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #3498db;
+  border-radius: 5px; /* round for checkbox, override for radio */
+  margin-right: 10px;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+}
+
+.custom-checkbox:checked::after {
+  content: "✓";
+  position: absolute;
+  top: 0;
+  left: 3px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.custom-radio {
+  border-radius: 50%;
+}
+
+.custom-radio:checked::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: #3498db;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 50%;
+}
+
+/* ===== Loader Animation ===== */
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 40px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ===== Text Clipping ===== */
+.clipped-text {
+  font-size: 3rem;
+  font-weight: bold;
+  background: url('../images/backgrounds/bg1.jpg') no-repeat center/cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 40px;
+}
+
+/* ===== Complex Shadow ===== */
+.shadow-box {
+  width: 200px;
+  height: 100px;
+  line-height: 100px;
+  background-color: #ff6b6b;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 auto 50px;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.3),
+              -10px -10px 20px rgba(255,255,255,0.2),
+              inset 0 0 10px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
