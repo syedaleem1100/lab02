@@ -1,0 +1,41 @@
+body{
+    font-family: Arial;
+    margin:20px;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+/* Card styling */
+.card{
+    background: lightblue;
+    padding:20px;
+    flex:1 1 calc(33.33% - 20px); /* 3 cards per row - desktop */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    min-height: 200px;
+    border: 1px solid #333;
+}
+
+/* Card Actions aligned to bottom */
+.card-actions{
+    margin-top: auto;
+}
+
+/* Responsive layouts */
+@media(max-width: 1024px){
+    .card{
+        flex:1 1 calc(50% - 20px); /* 2 cards per row - tablet */
+    }
+}
+
+@media(max-width: 600px){
+    .card{
+        flex:1 1 100%; /* 1 card per row - mobile */
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="51.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <h2>Admin</h2>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Users</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main-content">
+        <header class="dashboard-header">
+            <h1>Dashboard</h1>
+            <button class="toggle-sidebar" id="toggleSidebar">&#9776;</button>
+        </header>
+
+        <!-- Stat cards -->
+        <section class="stat-cards">
+            <div class="card">
+                <h3>Users</h3>
+                <p>1,250</p>
+            </div>
+            <div class="card">
+                <h3>Sales</h3>
+                <p>$25,000</p>
+            </div>
+            <div class="card">
+                <h3>Orders</h3>
+                <p>320</p>
+            </div>
+            <div class="card">
+                <h3>Alerts</h3>
+                <p>5</p>
+            </div>
+        </section>
+
+        <!-- Content area -->
+        <section class="dashboard-content">
+            <p>Main dashboard content goes here.</p>
+        </section>
+    </main>
+</div>
+
+<script>
+const toggleBtn = document.getElementById('toggleSidebar');
+const sidebar = document.getElementById('sidebar');
+
+toggleBtn.addEventListener('click', () => {
+    sidebar.classList.toggle('collapsed');
+});
+</script>
+
+</body>
+</html>

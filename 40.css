@@ -1,0 +1,68 @@
+body{
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column; /* Mobile-first: stack vertically */
+    gap:10px;
+}
+
+header, nav, main, aside, footer{
+    padding:20px;
+    text-align:center;
+    background: lightblue;
+    border:1px solid #333;
+}
+
+/* Mobile styles (base) */
+/* Already stacked vertically */
+
+/* Tablet styles: min-width 601px */
+@media (min-width: 601px){
+    .container{
+        flex-direction: row; /* horizontal layout */
+        flex-wrap: wrap;
+    }
+    header{
+        flex: 1 1 100%; /* full width */
+        background: lightgreen;
+    }
+    nav{
+        flex: 1 1 30%; /* side navigation */
+        background: lightcoral;
+    }
+    main{
+        flex: 1 1 70%; /* main content area */
+        background: lightyellow;
+    }
+    aside{
+        flex: 1 1 100%; /* stacked below */
+        background: lightpink;
+    }
+    footer{
+        flex: 1 1 100%; /* full width footer */
+        background: lightgray;
+    }
+}
+
+/* Desktop styles: min-width 1025px */
+@media (min-width: 1025px){
+    .container{
+        flex-direction: row;
+    }
+    nav{
+        flex: 1 1 20%; /* sidebar */
+    }
+    main{
+        flex: 1 1 60%;
+    }
+    aside{
+        flex: 1 1 20%; /* right sidebar */
+    }
+    header, footer{
+        flex: 1 1 100%;
+    }
+}

@@ -1,0 +1,93 @@
+body{
+    font-family: Arial;
+    margin:20px;
+}
+
+.box{
+    width: 100%;
+    height: 100px;
+    background: lightblue;
+    text-align:center;
+    line-height:100px;
+    margin-bottom:20px;
+}
+
+/* Base style */
+.orientation{
+    width:100%;
+    height:100px;
+    background: lightgreen;
+    text-align:center;
+    line-height:100px;
+    margin-bottom:20px;
+}
+
+.feature-box{
+    width:100%;
+    height:100px;
+    background: lightcoral;
+    text-align:center;
+    line-height:100px;
+    margin-bottom:20px;
+    transition: background 0.3s;
+}
+
+/* 1. Breakpoints: min-width & max-width */
+
+/* Mobile: up to 600px */
+@media (max-width: 600px){
+    .box{
+        background: lightpink;
+    }
+}
+
+/* Tablet: 601px - 1024px */
+@media (min-width: 601px) and (max-width: 1024px){
+    .box{
+        background: lightyellow;
+    }
+}
+
+/* Desktop: 1025px and up */
+@media (min-width: 1025px){
+    .box{
+        background: lightblue;
+    }
+}
+
+/* 2. Device Orientation */
+
+@media (orientation: landscape){
+    .orientation{
+        background: orange;
+    }
+}
+
+@media (orientation: portrait){
+    .orientation{
+        background: purple;
+    }
+}
+
+/* 3. Media Features: hover, pointer, aspect-ratio */
+
+/* Devices that can hover (mouse) */
+@media (hover: hover){
+    .feature-box:hover{
+        background: darkred;
+    }
+}
+
+/* Devices with coarse pointer (touch) */
+@media (pointer: coarse){
+    .feature-box{
+        background: darkorange;
+    }
+}
+
+/* Example using aspect-ratio */
+@media (min-aspect-ratio: 16/9){
+    .feature-box{
+        border: 5px solid blue;
+    }
+}

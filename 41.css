@@ -1,0 +1,34 @@
+body{
+    font-family: Arial;
+    margin:20px;
+}
+
+img{
+    max-width: 100%;
+    height: auto; /* ensures scaling */
+    display: block;
+    margin-bottom:20px;
+}
+
+/* 3. Responsive background images */
+.bg-image{
+    width: 100%;
+    height: 300px;
+    background-image: url('desktop-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom:20px;
+}
+
+/* Media queries for background images */
+@media (max-width: 1024px){
+    .bg-image{
+        background-image: url('tablet-bg.jpg');
+    }
+}
+
+@media (max-width: 600px){
+    .bg-image{
+        background-image: url('mobile-bg.jpg');
+    }
+}

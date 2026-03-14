@@ -1,0 +1,82 @@
+body{
+    font-family: Arial;
+    margin:20px;
+}
+
+/* 1. Flexbox inside Grid */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px;
+}
+
+.grid-item{
+    background: lightblue;
+    padding:10px;
+    display: flex; /* Flex inside grid */
+    justify-content: space-around;
+}
+
+.flex-item{
+    background: lightgreen;
+    padding:20px;
+    border:1px solid #333;
+    text-align:center;
+}
+
+/* 2. Grid inside Flex */
+
+.flex-container{
+    display: flex;
+    gap:10px;
+}
+
+.flex-child{
+    flex: 1;
+    padding:10px;
+    background: lightcoral;
+    text-align:center;
+}
+
+.grid-inside{
+    display:grid; /* Grid inside flex child */
+    grid-template-columns: repeat(3, 1fr);
+    gap:5px;
+    background: lightyellow;
+}
+
+.grid-inner{
+    background: lightgreen;
+    padding:10px;
+    border:1px solid #333;
+}
+
+/* 3. Floats with modern methods */
+
+.modern-layout{
+    overflow: hidden; /* clearfix for float */
+}
+
+.float-left{
+    float:left;
+    width:30%;
+    background: lightpink;
+    padding:20px;
+    text-align:center;
+}
+
+.flex-right{
+    display:flex;
+    justify-content: space-between;
+    float:right;
+    width:65%;
+    background: lightblue;
+    padding:20px;
+}
+
+.flex-right div{
+    background: lightgreen;
+    padding:10px;
+    text-align:center;
+}

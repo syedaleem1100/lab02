@@ -1,0 +1,76 @@
+body{
+    font-family: Arial;
+    margin:20px;
+}
+
+.item{
+    background: lightblue;
+    padding:20px;
+    text-align:center;
+    border:1px solid #333;
+    margin:5px;
+}
+
+/* 1 Display Grid */
+
+.grid-basic{
+    display:grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(2, 100px);
+    gap:10px;
+}
+
+/* 2 Grid Template Columns */
+
+.grid-columns{
+    display:grid;
+    grid-template-columns: 100px 200px 150px;
+    background:#eee;
+}
+
+/* 3 Grid Template Rows */
+
+.grid-rows{
+    display:grid;
+    grid-template-rows: 50px 100px 150px;
+    width: 200px;
+    background:#f4f4f4;
+}
+
+/* 4 Grid Template Areas */
+
+.grid-areas{
+    display:grid;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 50px 150px 50px;
+    gap:5px;
+}
+
+.header{grid-area: header; background: lightcoral;}
+.sidebar{grid-area: sidebar; background: lightgreen;}
+.main{grid-area: main; background: lightblue;}
+.footer{grid-area: footer; background: lightpink;}
+
+/* 5 Gap */
+
+.grid-gap{
+    display:grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(2, 100px);
+    gap:20px;
+}
+
+/* 6 Justify-items & Align-items */
+
+.grid-align{
+    display:grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: 100px;
+    justify-items:center; /* horizontal alignment of items */
+    align-items:end; /* vertical alignment of items */
+    background:#eee;
+}

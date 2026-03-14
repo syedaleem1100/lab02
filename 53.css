@@ -1,0 +1,91 @@
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header and Footer */
+header, footer{
+    background: lightblue;
+    padding:20px;
+    text-align:center;
+}
+
+/* Magazine Grid */
+.magazine{
+    display:grid;
+    grid-template-columns: 2fr 1fr 1fr; /* Asymmetric desktop */
+    grid-template-areas:
+        "feature news news"
+        "feature news sidebar"
+        "feature news news"
+        "feature secondary secondary";
+    gap:15px;
+    padding:20px;
+}
+
+/* Grid Areas */
+.feature{
+    grid-area: feature;
+    background: lightcoral;
+    padding:20px;
+    color:#fff;
+}
+
+.secondary{
+    grid-area: secondary;
+    background: darkorange;
+    padding:20px;
+    color:#fff;
+}
+
+.news{
+    background: lightgreen;
+    padding:20px;
+    color:#000;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background: lightyellow;
+    padding:20px;
+}
+
+/* Typography and images (dummy) */
+article{
+    font-size:1rem;
+}
+
+/* Tablet: Simplified symmetric 2-column */
+@media(max-width:1024px){
+    .magazine{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "feature feature"
+            "news news"
+            "news news"
+            "sidebar sidebar"
+            "secondary secondary";
+    }
+    article{
+        font-size:0.95rem;
+    }
+}
+
+/* Mobile: Single-column stacked */
+@media(max-width:768px){
+    .magazine{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "feature"
+            "news"
+            "news"
+            "news"
+            "sidebar"
+            "news"
+            "secondary";
+    }
+    article{
+        font-size:0.9rem;
+    }
+}

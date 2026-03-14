@@ -1,0 +1,56 @@
+body{
+    font-family: Arial;
+    margin: 20px;
+}
+
+/* BLOCK */
+.block{
+    display: block;
+    background-color: lightblue;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+
+/* INLINE */
+.inline{
+    display: inline;
+    background-color: yellow;
+    padding: 3px;
+}
+
+
+/* INLINE BLOCK */
+.inlineblock{
+    display: inline-block;
+    width: 120px;
+    height: 70px;
+    background-color: lightgreen;
+    margin: 5px;
+    text-align: center;
+    line-height: 70px;
+}
+
+
+/* VISIBLE BOX */
+.visible{
+    background-color: orange;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+
+/* VISIBILITY HIDDEN */
+.hidden{
+    visibility: hidden;
+    background-color: red;
+    padding: 10px;
+}
+
+
+/* DISPLAY NONE */
+.none{
+    display: none;
+    background-color: purple;
+    padding: 10px;
+}

@@ -1,0 +1,72 @@
+body{
+    font-family: Arial;
+    margin:20px;
+}
+
+.item{
+    background: lightblue;
+    padding:20px;
+    text-align:center;
+    border:1px solid #333;
+    margin:5px;
+}
+
+/* 1 Grid Column */
+
+.grid-column{
+    display:grid;
+    grid-template-columns: repeat(3, 100px);
+    gap:10px;
+}
+
+.span2{
+    grid-column: span 2; /* spans 2 columns */
+    background:lightgreen;
+}
+
+/* 2 Grid Row */
+
+.grid-row{
+    display:grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: 50px 50px;
+    gap:10px;
+}
+
+.row2{
+    grid-row: 2 / 3; /* placed in second row */
+    background:lightcoral;
+}
+
+/* 3 Grid Area */
+
+.grid-area{
+    display:grid;
+    grid-template-areas:
+        "header header"
+        "sidebar content"
+        "footer footer";
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 50px 150px 50px;
+    gap:5px;
+}
+
+.header{grid-area: header; background:lightpink;}
+.sidebar{grid-area: sidebar; background:lightgreen;}
+.content{grid-area: content; background:lightblue;}
+.footer{grid-area: footer; background:orange;}
+
+/* 4 Justify & Align Self */
+
+.grid-align-self{
+    display:grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: 100px;
+    gap:10px;
+}
+
+.grid-align-self .special{
+    justify-self:end; /* horizontal alignment in cell */
+    align-self:end;   /* vertical alignment in cell */
+    background:yellow;
+}

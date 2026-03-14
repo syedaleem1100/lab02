@@ -1,0 +1,90 @@
+body{
+    font-family: Arial;
+    margin: 20px;
+}
+
+/* Remove default list styling */
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+/* -------------------- */
+/* Horizontal Navigation */
+/* -------------------- */
+
+.horizontal-nav li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.horizontal-nav a{
+    background: #3498db;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+}
+
+
+/* -------------------- */
+/* Vertical Navigation */
+/* -------------------- */
+
+.vertical-nav li{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.vertical-nav a{
+    background: #2ecc71;
+    color: white;
+    padding: 8px;
+    display: block;
+    text-decoration: none;
+}
+
+
+/* -------------------- */
+/* Dropdown Menu */
+/* -------------------- */
+
+.dropdown-nav li{
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    background: #ddd;
+}
+
+.dropdown li{
+    display: block;
+}
+
+.menu:hover .dropdown{
+    display: block;
+}
+
+
+/* -------------------- */
+/* Display Table Layout */
+/* -------------------- */
+
+.table{
+    display: table;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.row{
+    display: table-row;
+}
+
+.cell{
+    display: table-cell;
+    border: 1px solid black;
+    padding: 8px 15px;
+}

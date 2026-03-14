@@ -1,0 +1,94 @@
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    background: lightblue;
+    padding:20px;
+    text-align:center;
+}
+
+h1{
+    margin:0;
+}
+
+/* Desktop Table */
+.table-container{
+    padding:20px;
+    max-width:1000px;
+    margin:0 auto;
+    overflow-x:auto;
+}
+
+.responsive-table{
+    width:100%;
+    border-collapse: collapse;
+}
+
+.responsive-table th, .responsive-table td{
+    border:1px solid #333;
+    padding:10px;
+    text-align:left;
+}
+
+.responsive-table th{
+    background: lightcoral;
+    color:#fff;
+}
+
+.responsive-table caption{
+    caption-side:top;
+    font-size:1.2rem;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+/* Tablet: Card Layout */
+@media(max-width:1024px){
+    .responsive-table, .responsive-table thead, .responsive-table tbody, .responsive-table th, .responsive-table td, .responsive-table tr{
+        display:block;
+    }
+
+    .responsive-table thead{
+        display:none;
+    }
+
+    .responsive-table tr{
+        margin-bottom:15px;
+        border:1px solid #ccc;
+        border-radius:5px;
+        padding:10px;
+        background: lightyellow;
+    }
+
+    .responsive-table td{
+        display:flex;
+        justify-content: space-between;
+        padding:10px;
+        border:none;
+        border-bottom:1px solid #eee;
+    }
+
+    .responsive-table td:last-child{
+        border-bottom:none;
+    }
+
+    .responsive-table td:before{
+        content: attr(data-label);
+        font-weight:bold;
+        flex-basis:50%;
+    }
+}
+
+/* Mobile: Single Column */
+@media(max-width:768px){
+    .responsive-table td{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .responsive-table td:before{
+        margin-bottom:5px;
+    }
+}

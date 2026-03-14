@@ -1,0 +1,68 @@
+body{
+    font-family: Arial;
+    margin: 20px;
+}
+
+
+/* 1. Float Image */
+
+.float-img{
+    float: left;
+    margin-right: 15px;
+}
+
+
+/* 2. Two Column Layout */
+
+.left{
+    float: left;
+    width: 70%;
+    background: lightblue;
+    padding: 10px;
+}
+
+.right{
+    float: right;
+    width: 25%;
+    background: lightgreen;
+    padding: 10px;
+}
+
+
+/* 3. Three Column Layout */
+
+.col{
+    float: left;
+    width: 30%;
+    background: lightcoral;
+    margin-right: 2%;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* 4. Clearfix */
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* Clearfix example boxes */
+
+.box{
+    float: left;
+    width: 120px;
+    height: 80px;
+    background: orange;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 80px;
+}
+
+.clearfix-box{
+    background: #eee;
+    padding: 10px;
+}

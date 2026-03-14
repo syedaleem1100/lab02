@@ -1,0 +1,133 @@
+body{
+    font-family: Arial;
+    margin:0;
+    padding:0;
+}
+
+/* Header */
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: lightblue;
+    padding: 10px 20px;
+}
+
+.main-header h1{
+    margin:0;
+}
+
+/* Horizontal navigation */
+.main-nav ul{
+    list-style: none;
+    display: flex;
+    margin:0;
+    padding:0;
+}
+
+.main-nav ul li{
+    position: relative;
+}
+
+.main-nav ul li a{
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.main-nav ul li:hover{
+    background: lightgreen;
+}
+
+/* Dropdown menu */
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left:0;
+    background: lightyellow;
+    min-width: 150px;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: flex; /* flex dropdown */
+}
+
+.dropdown-menu li a{
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Hamburger menu */
+.hamburger{
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar-nav{
+    width: 200px;
+    background: lightcoral;
+    padding: 15px;
+    float:left;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.sidebar-nav ul{
+    list-style:none;
+    padding:0;
+}
+
+.sidebar-nav ul li a{
+    display:block;
+    padding:10px;
+    text-decoration:none;
+    color:#fff;
+    margin-bottom:5px;
+}
+
+/* Main content */
+.main-content{
+    margin-left: 220px;
+    padding:20px;
+}
+
+/* Responsive Mobile */
+@media (max-width:768px){
+    /* Sidebar stacks */
+    .sidebar-nav{
+        width:100%;
+        height:auto;
+        float:none;
+        margin-bottom:10px;
+    }
+
+    .main-content{
+        margin-left:0;
+    }
+
+    /* Hamburger menu visible */
+    .hamburger{
+        display:block;
+    }
+
+    .main-nav ul{
+        display:none;
+        flex-direction: column;
+        width:100%;
+    }
+
+    .main-nav ul.show{
+        display:flex;
+    }
+
+    .dropdown-menu{
+        position: static;
+        border:none;
+    }
+}

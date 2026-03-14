@@ -1,0 +1,74 @@
+body{
+    font-family: Arial;
+    margin: 20px;
+}
+
+/* 1. Block, Inline, Inline-block */
+.block{
+    display: block;
+    background: lightblue;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.inline{
+    display: inline;
+    background: lightgreen;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.inline-block{
+    display: inline-block;
+    background: lightcoral;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* 2. Table display without table markup */
+.table{
+    display: table;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.row{
+    display: table-row;
+}
+
+.cell{
+    display: table-cell;
+    border: 1px solid #333;
+    padding: 10px;
+    background: lightyellow;
+}
+
+/* 3. Hidden elements demonstration */
+.visible{
+    display: block;
+    background: lightgray;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.hidden{
+    display: block;
+    background: pink;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Responsive behavior */
+@media (max-width: 600px){
+    .inline-block{
+        display: block; /* convert inline-block to block on small screens */
+    }
+
+    .hidden{
+        display: none; /* hide element on mobile */
+    }
+
+    .table .cell{
+        display: block; /* stack table cells vertically */
+    }
+}

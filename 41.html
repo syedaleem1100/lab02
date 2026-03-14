@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive Images</title>
+<link rel="stylesheet" href="41.css">
+</head>
+<body>
+
+<h1>Responsive Images Examples</h1>
+
+<!-- 1. srcset and sizes -->
+<h2>1. srcset & sizes</h2>
+<img 
+    src="small.jpg" 
+    srcset="small.jpg 480w, medium.jpg 768w, large.jpg 1024w" 
+    sizes="(max-width: 600px) 480px, (max-width: 1024px) 768px, 1024px"
+    alt="Responsive Example">
+
+<!-- 2. Picture element -->
+<h2>2. Picture Element</h2>
+<picture>
+    <source media="(max-width: 600px)" srcset="bacha.png">
+    <source media="(max-width: 1024px)" srcset="bacha.png">
+    <img src="bacha.png" alt="Art Direction Example">
+</picture>
+
+<!-- 3. Responsive background images -->
+<h2>3. Responsive Background Images</h2>
+<div class="bg-image">Background image adapts</div>
+
+</body>
+</html>

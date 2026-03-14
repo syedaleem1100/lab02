@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Combining Layout Techniques</title>
+<link rel="stylesheet" href="42.css">
+</head>
+<body>
+
+<h1>Combining Layout Techniques</h1>
+
+<!-- 1. Flexbox inside Grid -->
+<h2>1. Flexbox inside Grid</h2>
+<div class="grid-container">
+    <div class="grid-item">
+        <div class="flex-item">A</div>
+        <div class="flex-item">B</div>
+        <div class="flex-item">C</div>
+    </div>
+    <div class="grid-item">
+        <div class="flex-item">D</div>
+        <div class="flex-item">E</div>
+        <div class="flex-item">F</div>
+    </div>
+</div>
+
+<!-- 2. Grid inside Flex -->
+<h2>2. Grid inside Flex</h2>
+<div class="flex-container">
+    <div class="flex-child">1</div>
+    <div class="flex-child grid-inside">
+        <div class="grid-inner">A</div>
+        <div class="grid-inner">B</div>
+        <div class="grid-inner">C</div>
+    </div>
+    <div class="flex-child">3</div>
+</div>
+
+<!-- 3. Floats with modern methods -->
+<h2>3. Floats with Modern Methods</h2>
+<div class="modern-layout">
+    <div class="float-left">Left</div>
+    <div class="flex-right">
+        <div>Right 1</div>
+        <div>Right 2</div>
+    </div>
+</div>
+
+</body>
+</html>

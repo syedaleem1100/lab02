@@ -1,0 +1,86 @@
+body{
+font-family: Arial;
+margin:20px;
+}
+
+
+/* Common flex item style */
+
+.item{
+background: lightblue;
+padding:20px;
+margin:5px;
+text-align:center;
+width:80px;
+}
+
+
+
+/* 1 Display Flex */
+
+.flex-container{
+display:flex;
+background:#eee;
+}
+
+
+
+/* 2 Flex Direction */
+
+.flex-row{
+display:flex;
+flex-direction:row;
+background:#ddd;
+margin-bottom:10px;
+}
+
+.flex-column{
+display:flex;
+flex-direction:column;
+background:#ddd;
+}
+
+
+
+/* 3 Flex Wrap */
+
+.flex-wrap{
+display:flex;
+flex-wrap:wrap;
+width:300px;
+background:#eee;
+}
+
+
+
+/* 4 Justify Content */
+
+.justify-example{
+display:flex;
+justify-content:space-between;
+background:#ddd;
+}
+
+
+
+/* 5 Align Items */
+
+.align-items{
+display:flex;
+height:120px;
+align-items:center;
+background:#eee;
+}
+
+
+
+/* 6 Align Content */
+
+.align-content{
+display:flex;
+flex-wrap:wrap;
+align-content:space-around;
+height:200px;
+background:#ddd;
+width:300px;
+}

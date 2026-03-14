@@ -1,0 +1,127 @@
+body{
+font-family: Arial;
+margin:20px;
+}
+
+
+
+/* 1 Overlapping Elements */
+
+.overlap-container{
+position:relative;
+height:150px;
+}
+
+.box1{
+position:absolute;
+width:120px;
+height:120px;
+background:red;
+top:20px;
+left:20px;
+z-index:1;
+}
+
+.box2{
+position:absolute;
+width:120px;
+height:120px;
+background:blue;
+top:50px;
+left:50px;
+z-index:2;
+color:white;
+}
+
+
+
+/* 2 Modal Dialog */
+
+.modal-container{
+position:relative;
+height:200px;
+background:#eee;
+}
+
+.modal{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:white;
+padding:20px;
+border:1px solid #333;
+}
+
+
+
+/* 3 Sticky Navigation */
+
+.sticky-nav{
+position:sticky;
+top:0;
+background:#333;
+padding:10px;
+}
+
+.sticky-nav a{
+color:white;
+margin-right:15px;
+text-decoration:none;
+}
+
+
+
+/* 4 Tooltip */
+
+.tooltip{
+position:relative;
+display:inline-block;
+cursor:pointer;
+}
+
+.tooltip-text{
+position:absolute;
+bottom:120%;
+left:50%;
+transform:translateX(-50%);
+background:black;
+color:white;
+padding:5px;
+display:none;
+}
+
+.tooltip:hover .tooltip-text{
+display:block;
+}
+
+
+
+/* Dropdown */
+
+.dropdown{
+position:relative;
+display:inline-block;
+}
+
+.dropbtn{
+padding:8px 15px;
+}
+
+.dropdown-content{
+position:absolute;
+background:#f1f1f1;
+min-width:120px;
+display:none;
+}
+
+.dropdown-content a{
+display:block;
+padding:8px;
+text-decoration:none;
+color:black;
+}
+
+.dropdown:hover .dropdown-content{
+display:block;
+}

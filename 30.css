@@ -1,0 +1,98 @@
+body{
+    font-family: Arial;
+    margin: 20px;
+}
+
+
+/* Clearfix */
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+/* 1 Float Collapse Example */
+
+.container{
+    background: #eee;
+    padding: 10px;
+}
+
+.box{
+    float: left;
+    width: 120px;
+    height: 80px;
+    background: lightblue;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 80px;
+}
+
+
+
+/* 2 Equal Height Columns */
+
+.equal-columns{
+    margin-top: 20px;
+}
+
+.column{
+    float: left;
+    width: 45%;
+    background: lightgreen;
+    padding: 15px;
+    margin-right: 5%;
+    min-height: 150px;
+}
+
+
+
+/* 3 Float Grid System */
+
+.row{
+    margin-top: 20px;
+}
+
+.grid{
+    float: left;
+    background: lightcoral;
+    padding: 20px;
+    text-align: center;
+}
+
+.col-4{
+    width: 30%;
+    margin-right: 3%;
+}
+
+
+
+/* 4 Responsive Floats */
+
+.responsive-row{
+    margin-top: 20px;
+}
+
+.responsive-box{
+    float: left;
+    width: 30%;
+    background: orange;
+    padding: 20px;
+    margin-right: 3%;
+    text-align: center;
+}
+
+
+/* Media Query */
+
+@media (max-width: 768px){
+
+.responsive-box{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+}

@@ -1,0 +1,77 @@
+body{
+    font-family: Arial;
+    margin:20px;
+}
+
+.item{
+    background: lightblue;
+    padding:20px;
+    border:1px solid #333;
+    text-align:center;
+    margin:5px;
+}
+
+/* 1 Fractional Units */
+
+.grid-fr{
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr; /* flexible widths */
+    gap:10px;
+}
+
+/* 2 minmax() */
+
+.grid-minmax{
+    display:grid;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    gap:10px;
+}
+
+/* 3 repeat() Function */
+
+.grid-repeat{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:10px;
+}
+
+/* 4 Auto-fit & Auto-fill */
+
+.grid-auto{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap:10px;
+}
+
+/* 5 Grid Line Naming */
+
+.grid-line{
+    display:grid;
+    grid-template-columns: [start] 150px [main-start] 1fr [end];
+    grid-template-rows: [top] 50px [content-start] 150px [bottom];
+    gap:10px;
+}
+
+.grid-line .header{
+    grid-column: start / end;
+    grid-row: top / content-start;
+    background: lightcoral;
+}
+
+.grid-line .sidebar{
+    grid-column: start / main-start;
+    grid-row: content-start / bottom;
+    background: lightgreen;
+}
+
+.grid-line .content{
+    grid-column: main-start / end;
+    grid-row: content-start / bottom;
+    background: lightblue;
+}
+
+.grid-line .footer{
+    grid-column: start / end;
+    grid-row: bottom;
+    background: lightpink;
+}

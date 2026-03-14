@@ -1,0 +1,70 @@
+body{
+    font-family: Arial;
+    margin: 20px;
+}
+
+
+/* Common box style */
+
+.box{
+    width: 150px;
+    padding: 15px;
+    margin: 10px 0;
+    background: lightblue;
+    text-align: center;
+}
+
+
+/* 1 Static (default) */
+
+.static{
+    position: static;
+}
+
+
+/* 2 Relative */
+
+.relative{
+    position: relative;
+    left: 40px;
+    top: 10px;
+    background: lightgreen;
+}
+
+
+/* 3 Absolute */
+
+.parent{
+    position: relative;
+    height: 150px;
+    background: #eee;
+    padding: 10px;
+}
+
+.absolute{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: orange;
+}
+
+
+/* 4 Fixed */
+
+.fixed{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: red;
+    color: white;
+}
+
+
+/* 5 Sticky */
+
+.sticky{
+    position: sticky;
+    top: 0;
+    background: purple;
+    color: white;
+}

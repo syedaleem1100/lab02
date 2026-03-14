@@ -1,0 +1,97 @@
+body{
+font-family: Arial;
+margin:20px;
+}
+
+
+
+/* 1 Navigation Bar */
+
+.navbar{
+display:flex;
+background:#333;
+}
+
+.navbar a{
+color:white;
+padding:10px 15px;
+text-decoration:none;
+}
+
+
+
+/* 2 Card Layout */
+
+.card-container{
+display:flex;
+gap:10px;
+}
+
+.card{
+flex:1;
+background:#eee;
+padding:15px;
+display:flex;
+flex-direction:column;
+}
+
+.card button{
+margin-top:auto;
+}
+
+
+
+/* 3 Holy Grail Layout */
+
+.holy-container{
+margin-top:20px;
+border:1px solid #ccc;
+}
+
+header, footer{
+background:#ddd;
+padding:10px;
+text-align:center;
+}
+
+.holy-main{
+display:flex;
+}
+
+.left{
+width:20%;
+background:lightblue;
+padding:10px;
+}
+
+.content{
+flex:1;
+background:#f4f4f4;
+padding:10px;
+}
+
+.right{
+width:20%;
+background:lightgreen;
+padding:10px;
+}
+
+
+
+/* 4 Form Layout */
+
+.flex-form{
+display:flex;
+flex-direction:column;
+width:300px;
+gap:10px;
+}
+
+.form-group{
+display:flex;
+flex-direction:column;
+}
+
+input{
+padding:5px;
+}

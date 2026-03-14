@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-commerce Product Grid</title>
+    <link rel="stylesheet" href="50.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>Shop</h1>
+    <button class="filter-toggle" id="filterToggle">&#9776; Filters</button>
+</header>
+
+<div class="container">
+    <!-- Sidebar Filters -->
+    <aside class="sidebar" id="sidebar">
+        <h2>Filters</h2>
+        <ul>
+            <li><input type="checkbox"> Category 1</li>
+            <li><input type="checkbox"> Category 2</li>
+            <li><input type="checkbox"> Category 3</li>
+            <li><input type="checkbox"> Category 4</li>
+        </ul>
+    </aside>
+
+    <!-- Product Grid -->
+    <main class="product-grid">
+        <div class="product-card">
+            <img src="bacha.png" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>$25.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="bacha.png" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>$30.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="bacha.png" alt="Product 3">
+            <h3>Product 3</h3>
+            <p>$15.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="bacha.png" alt="Product 4">
+            <h3>Product 4</h3>
+            <p>$45.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="bacha.png" alt="Product 5">
+            <h3>Product 5</h3>
+            <p>$20.00</p>
+            <button>Add to Cart</button>
+        </div>
+    </main>
+</div>
+
+<script>
+    const toggleBtn = document.getElementById('filterToggle');
+    const sidebar = document.getElementById('sidebar');
+
+    toggleBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('show');
+    });
+</script>
+
+</body>
+</html>

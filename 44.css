@@ -1,0 +1,51 @@
+body{
+    font-family: Arial;
+    margin: 20px;
+}
+
+.container{
+    width: 100%;
+    overflow: hidden; /* clearfix for floated children */
+}
+
+/* Sidebar */
+.sidebar{
+    float: left;
+    width: 25%;
+    background: lightcoral;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-right: 2%;
+}
+
+/* Main content */
+.content{
+    float: left;
+    width: 73%;
+    background: lightblue;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Images wrapped with text */
+.content img{
+    float: right;
+    margin: 0 0 10px 10px;
+    max-width: 40%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px){
+    .sidebar, .content{
+        float: none;
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    .content img{
+        float: none;
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+}

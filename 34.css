@@ -1,0 +1,81 @@
+body{
+font-family: Arial;
+margin:20px;
+}
+
+
+/* common container */
+
+.container{
+display:flex;
+background:#eee;
+margin-bottom:20px;
+height:120px;
+}
+
+
+/* common item */
+
+.item{
+background: lightblue;
+padding:20px;
+margin:5px;
+text-align:center;
+}
+
+
+
+/* 1 Flex Basis */
+
+.big{
+flex-basis:200px;
+background:lightgreen;
+}
+
+
+
+/* 2 Flex Shorthand */
+
+.flex1{
+flex:1;
+background:orange;
+}
+
+.flex2{
+flex:2;
+background:lightcoral;
+}
+
+.flex3{
+flex:1;
+background:lightpink;
+}
+
+
+
+/* 3 Align Self */
+
+.align-self{
+align-items:flex-start;
+}
+
+.special{
+align-self:flex-end;
+background:yellow;
+}
+
+
+
+/* 4 Order */
+
+.first{
+order:3;
+}
+
+.second{
+order:1;
+}
+
+.third{
+order:2;
+}

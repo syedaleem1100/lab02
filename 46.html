@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Navigation System</title>
+    <link rel="stylesheet" href="46.css">
+</head>
+<body>
+
+<!-- Header with horizontal nav -->
+<header class="main-header">
+    <h1>Website Logo</h1>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Services</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">SEO</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+    </nav>
+</header>
+
+<!-- Sidebar navigation -->
+<aside class="sidebar-nav">
+    <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Settings</a></li>
+    </ul>
+</aside>
+
+<!-- Main content -->
+<main class="main-content">
+    <h2>Responsive Flexbox Navigation</h2>
+    <p>This layout demonstrates horizontal top navigation with dropdowns, vertical sidebar, and responsive hamburger menu on mobile.</p>
+</main>
+
+<script>
+    // Hamburger toggle
+    const hamburger = document.getElementById('hamburger');
+    const navUL = document.querySelector('.main-nav ul');
+    hamburger.addEventListener('click', () => {
+        navUL.classList.toggle('show');
+    });
+</script>
+
+</body>
+</html>
